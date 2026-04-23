@@ -1,0 +1,47 @@
+<svg width="780" height="1040" viewBox="0 0 780 1040" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldBg" x1="88" y1="72" x2="690" y2="968" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3E6CF"/>
+      <stop offset="0.48" stop-color="#D9C59D"/>
+      <stop offset="1" stop-color="#162126"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(558 264) rotate(90) scale(210)">
+      <stop stop-color="#FFF4CF" stop-opacity="0.88"/>
+      <stop offset="1" stop-color="#FFF4CF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skylineStroke" x1="92" y1="664" x2="682" y2="664" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#162126"/>
+      <stop offset="1" stop-color="#2E4A4A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="780" height="1040" rx="42" fill="url(#goldBg)"/>
+  <circle cx="558" cy="264" r="210" fill="url(#sun)"/>
+  <rect x="46" y="46" width="688" height="948" rx="28" stroke="#D5C096" stroke-width="2"/>
+
+  <path d="M76 556C176 490 270 458 390 458C510 458 604 490 704 556V672H76V556Z" fill="#19262D"/>
+  <path d="M92 614H688" stroke="url(#skylineStroke)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M136 614V536H184V614" stroke="#33464B" stroke-width="3"/>
+  <path d="M228 614V514H272V614" stroke="#33464B" stroke-width="3"/>
+  <path d="M314 614V548H360V614" stroke="#33464B" stroke-width="3"/>
+  <path d="M412 614V494H468V614" stroke="#33464B" stroke-width="3"/>
+  <path d="M520 614V528H574V614" stroke="#33464B" stroke-width="3"/>
+  <path d="M614 614V556H654V614" stroke="#33464B" stroke-width="3"/>
+
+  <path d="M218 760C258 660 314 611 390 611C466 611 522 660 562 760H218Z" fill="#152126"/>
+  <path d="M304 760C319 694 344 644 390 644C436 644 461 694 476 760H304Z" fill="#F5EBD6" fill-opacity="0.2"/>
+
+  <path d="M388 325C356 325 336 362 344 394L374 526C377 538 388 546 400 546C412 546 423 538 426 526L456 394C464 362 444 325 412 325H388Z" fill="#162126"/>
+  <path d="M355 405H445" stroke="#F7E9C8" stroke-opacity="0.22" stroke-width="2"/>
+  <path d="M374 526H426" stroke="#F7E9C8" stroke-opacity="0.22" stroke-width="2"/>
+  <path d="M400 264V325" stroke="#162126" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="400" cy="250" r="14" fill="#162126"/>
+
+  <path d="M218 802C314 780 366 772 390 772C414 772 466 780 562 802" stroke="#FFF4CF" stroke-opacity="0.3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M76 874C200 848 304 834 390 834C476 834 580 848 704 874" stroke="#FFF4CF" stroke-opacity="0.22" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="84" y="112" fill="#162126" font-family="Arial, sans-serif" font-size="18" letter-spacing="8">ROOFTOP PROGRAM</text>
+  <text x="84" y="900" fill="#162126" font-family="Arial, sans-serif" font-size="74" font-weight="700">SKYLINE</text>
+  <text x="84" y="972" fill="#162126" font-family="Arial, sans-serif" font-size="74" font-weight="700">GOLD</text>
+  <text x="84" y="1010" fill="#31474C" font-family="Arial, sans-serif" font-size="18" letter-spacing="4">SUNSET LOUNGE / COCKTAIL RITUAL / SOCIAL HOUR</text>
+</svg>

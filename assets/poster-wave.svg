@@ -1,0 +1,43 @@
+<svg width="780" height="1040" viewBox="0 0 780 1040" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="waveBg" x1="84" y1="108" x2="688" y2="978" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#091117"/>
+      <stop offset="0.42" stop-color="#10212A"/>
+      <stop offset="1" stop-color="#0D1720"/>
+    </linearGradient>
+    <radialGradient id="waveGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(538 328) rotate(90) scale(220)">
+      <stop stop-color="#8AF5C8" stop-opacity="0.52"/>
+      <stop offset="1" stop-color="#8AF5C8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orangeGlowWave" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(230 720) rotate(90) scale(230)">
+      <stop stop-color="#FF8D68" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FF8D68" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="780" height="1040" rx="42" fill="url(#waveBg)"/>
+  <circle cx="538" cy="328" r="220" fill="url(#waveGlow)"/>
+  <circle cx="230" cy="720" r="230" fill="url(#orangeGlowWave)"/>
+  <rect x="46" y="46" width="688" height="948" rx="28" stroke="#2C4045" stroke-width="2"/>
+
+  <circle cx="390" cy="418" r="138" stroke="#F5EBD6" stroke-opacity="0.2" stroke-width="3"/>
+  <circle cx="390" cy="418" r="92" stroke="#8AF5C8" stroke-opacity="0.45" stroke-width="4"/>
+  <circle cx="390" cy="418" r="22" fill="#F5EBD6"/>
+  <circle cx="390" cy="418" r="10" fill="#0B1418"/>
+
+  <path d="M118 588C188 540 250 516 338 516C426 516 470 552 556 552C612 552 658 534 700 504" stroke="#FF8D68" stroke-opacity="0.78" stroke-width="8" stroke-linecap="round"/>
+  <path d="M92 650C184 602 274 582 364 582C468 582 534 632 626 632C668 632 702 622 724 612" stroke="#8AF5C8" stroke-opacity="0.72" stroke-width="8" stroke-linecap="round"/>
+  <path d="M88 722C184 682 292 662 406 662C510 662 570 712 652 712C690 712 714 704 728 698" stroke="#F5EBD6" stroke-opacity="0.28" stroke-width="6" stroke-linecap="round"/>
+  <path d="M108 790C208 748 318 732 428 732C528 732 592 778 662 778C690 778 708 774 718 770" stroke="#8AF5C8" stroke-opacity="0.42" stroke-width="5" stroke-linecap="round"/>
+
+  <rect x="234" y="330" width="312" height="178" rx="30" stroke="#F5EBD6" stroke-opacity="0.12" stroke-width="2"/>
+  <path d="M286 374H494" stroke="#F5EBD6" stroke-opacity="0.16" stroke-width="3" stroke-linecap="round"/>
+  <path d="M286 456H494" stroke="#F5EBD6" stroke-opacity="0.16" stroke-width="3" stroke-linecap="round"/>
+  <path d="M330 336V500" stroke="#F5EBD6" stroke-opacity="0.1" stroke-width="2"/>
+  <path d="M452 336V500" stroke="#F5EBD6" stroke-opacity="0.1" stroke-width="2"/>
+
+  <text x="84" y="114" fill="#F5EBD6" font-family="Arial, sans-serif" font-size="18" letter-spacing="8">AUDIO VISUAL NIGHT</text>
+  <text x="84" y="904" fill="#F5EBD6" font-family="Arial, sans-serif" font-size="74" font-weight="700">BASSLINE</text>
+  <text x="84" y="976" fill="#F5EBD6" font-family="Arial, sans-serif" font-size="74" font-weight="700">TIDE</text>
+  <text x="84" y="1012" fill="#B4C0BF" font-family="Arial, sans-serif" font-size="18" letter-spacing="5">HYBRID SET / VISUAL WAVES / LATE ROOM</text>
+</svg>

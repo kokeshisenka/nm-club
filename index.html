@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N&M Club</title>
+  <meta
+    name="description"
+    content="N&M Club — сучасний клуб із клубним дашбордом, афішею подій, галереєю та premium membership."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="backdrop-orb backdrop-orb--one" aria-hidden="true"></div>
+  <div class="backdrop-orb backdrop-orb--two" aria-hidden="true"></div>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="N&M Club, на початок сторінки">
+        <span class="brand__mark">N&M</span>
+        <span class="brand__text">
+          <strong>Club</strong>
+          <small>Night house</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Основна навігація">
+        <a href="#hub">Club Hub</a>
+        <a href="#experience">Experience</a>
+        <a href="#reserve">Reserve</a>
+      </nav>
+
+      <a class="button button--ghost button--small" href="#reserve">Book a table</a>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero__copy" data-reveal>
+          <p class="eyebrow">Boutique nightlife house</p>
+          <h1>N&M Club. Ніч, яка виглядає як окремий світ.</h1>
+          <p class="hero__lead">
+            Простір із живими DJ-сетами, cocktail lab, rooftop lounge та приватними зонами,
+            де кожен візит відчувається як curated experience, а не просто вечірка.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button" href="#reserve">Забронювати столик</a>
+            <a class="button button--ghost" href="#hub">Переглянути hub</a>
+          </div>
+
+          <div class="hero__chips" aria-label="Ключові особливості клубу">
+            <span>Live DJ sets</span>
+            <span>Signature bar</span>
+            <span>Private rooms</span>
+            <span>Immersive light show</span>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-reveal>
+          <img src="assets/hero-scene.svg" alt="Стилізована сцена та атмосфера N&M Club">
+
+          <article class="floating-card floating-card--top">
+            <span class="floating-card__label">Tonight's headliner</span>
+            <strong>Velvet Pulse</strong>
+            <p>Nu-disco, deep house та бар із авторськими smoky cocktails.</p>
+          </article>
+
+          <article class="floating-card floating-card--bottom">
+            <span class="floating-card__label">Peak crowd score</span>
+            <strong>92%</strong>
+            <p>Субота о 23:40 традиційно збирає найгарячішу хвилю гостей.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="stats-band" aria-label="Основні показники клубу">
+        <article class="stat-card" data-reveal>
+          <span>Зон клубу</span>
+          <strong data-count="5">5</strong>
+          <p>від main floor до rooftop lounge та private noir room</p>
+        </article>
+
+        <article class="stat-card" data-reveal>
+          <span>Ритм тижня</span>
+          <strong data-count="7">7</strong>
+          <p>днів подій, warm-up вечорів і брендованих шоукейcів</p>
+        </article>
+
+        <article class="stat-card" data-reveal>
+          <span>Сценарії ночі</span>
+          <strong data-count="24">24</strong>
+          <p>комбінації seating, світла, сервісу та барного настрою</p>
+        </article>
+
+        <article class="stat-card" data-reveal>
+          <span>Гостьовий рейтинг</span>
+          <strong data-count="4.9" data-decimals="1">4.9</strong>
+          <p>за атмосферу, сервіс і музичну селекцію за нашою demo-аналітикою</p>
+        </article>
+      </section>
+
+      <section class="dashboard" id="hub">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Club Hub</p>
+          <h2>Один простір для темпу, подій, образів і membership.</h2>
+          <p>
+            Перемикай вкладки: перша вкладка показує таблицю відвідувань по днях тижня,
+            далі йдуть афіша, галерея та пакетні формати для постійних гостей.
+          </p>
+        </div>
+
+        <div class="tabs" data-reveal>
+          <div class="tab-controls" role="tablist" aria-label="Розділи клубного hub">
+            <button
+              class="tab-button is-active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="panel-attendance"
+              data-tab-target="attendance"
+            >
+              Відвідуваність
+            </button>
+            <button
+              class="tab-button"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-events"
+              data-tab-target="events"
+            >
+              Афіша
+            </button>
+            <button
+              class="tab-button"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-gallery"
+              data-tab-target="gallery"
+            >
+              Галерея
+            </button>
+            <button
+              class="tab-button"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-membership"
+              data-tab-target="membership"
+            >
+              Membership
+            </button>
+          </div>
+
+          <div class="tab-panels">
+            <article class="tab-panel is-active" id="panel-attendance" role="tabpanel" data-tab-panel="attendance">
+              <div class="attendance-layout">
+                <div class="glass-panel">
+                  <div class="panel-head">
+                    <div>
+                      <p class="eyebrow">Перший таб</p>
+                      <h3>Таблиця відвідуваності за днями тижня</h3>
+                    </div>
+                    <span class="pill">Fake data demo</span>
+                  </div>
+
+                  <div class="chart-card">
+                    <div class="attendance-chart" aria-label="Графік відвідуваності по днях тижня">
+                      <div class="attendance-chart__grid" aria-hidden="true">
+                        <span>300</span>
+                        <span>240</span>
+                        <span>180</span>
+                        <span>120</span>
+                        <span>60</span>
+                      </div>
+
+                      <div class="attendance-chart__bars">
+                        <div class="day-bar">
+                          <span class="day-bar__value">84</span>
+                          <div class="day-bar__track">
+                            <span class="day-bar__fill" style="--bar-height: 32%;"></span>
+                          </div>
+                          <strong>Пн</strong>
+                        </div>
+
+                        <div class="day-bar">
+                          <span class="day-bar__value">103</span>
+                          <div class="day-bar__track">
+                            <span class="day-bar__fill" style="--bar-height: 39%;"></span>
+                          </div>
+                          <strong>Вт</strong>
+                        </div>
+
+                        <div class="day-bar">
+                          <span class="day-bar__value">126</span>
+                          <div class="day-bar__track">
+                            <span class="day-bar__fill" style="--bar-height: 47%;"></span>
+                          </div>
+                          <strong>Ср</strong>
+                        </div>
+
+                        <div class="day-bar">
+                          <span class="day-bar__value">178</span>
+                          <div class="day-bar__track">
+                            <span class="day-bar__fill" style="--bar-height: 67%;"></span>
+                          </div>
+                          <strong>Чт</strong>
+                        </div>
+
+                        <div class="day-bar day-bar--highlight">
+                          <span class="day-bar__value">244</span>
+                          <div class="day-bar__track">
+                            <span class="day-bar__fill" style="--bar-height: 89%;"></span>
+                          </div>
+                          <strong>Пт</strong>
+                        </div>
+
+                        <div class="day-bar day-bar--highlight">
+                          <span class="day-bar__value">266</span>
+                          <div class="day-bar__track">
+                            <span class="day-bar__fill" style="--bar-height: 96%;"></span>
+                          </div>
+                          <strong>Сб</strong>
+                        </div>
+
+                        <div class="day-bar">
+                          <span class="day-bar__value">148</span>
+                          <div class="day-bar__track">
+                            <span class="day-bar__fill" style="--bar-height: 56%;"></span>
+                          </div>
+                          <strong>Нд</strong>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="chart-notes">
+                      <div class="chart-note">
+                        <span>Пік тижня</span>
+                        <strong>Субота, 266 гостей</strong>
+                      </div>
+                      <div class="chart-note">
+                        <span>Найкращий розігрів</span>
+                        <strong>Четвер після 22:00</strong>
+                      </div>
+                      <div class="chart-note">
+                        <span>Плавний afterglow</span>
+                        <strong>Неділя тримає lounge-ритм</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <aside class="insight-stack">
+                  <article class="glass-panel insight-card">
+                    <div class="panel-head panel-head--compact">
+                      <div>
+                        <p class="eyebrow">Heatmap</p>
+                        <h3>Теплова карта тижня</h3>
+                      </div>
+                    </div>
+
+                    <div class="heatmap">
+                      <div class="heatmap__cell" style="--level: 42%;">
+                        <span>Пн</span>
+                        <strong>42%</strong>
+                      </div>
+                      <div class="heatmap__cell" style="--level: 51%;">
+                        <span>Вт</span>
+                        <strong>51%</strong>
+                      </div>
+                      <div class="heatmap__cell" style="--level: 59%;">
+                        <span>Ср</span>
+                        <strong>59%</strong>
+                      </div>
+                      <div class="heatmap__cell" style="--level: 71%;">
+                        <span>Чт</span>
+                        <strong>71%</strong>
+                      </div>
+                      <div class="heatmap__cell heatmap__cell--highlight" style="--level: 88%;">
+                        <span>Пт</span>
+                        <strong>88%</strong>
+                      </div>
+                      <div class="heatmap__cell heatmap__cell--highlight" style="--level: 92%;">
+                        <span>Сб</span>
+                        <strong>92%</strong>
+                      </div>
+                      <div class="heatmap__cell" style="--level: 63%;">
+                        <span>Нд</span>
+                        <strong>63%</strong>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="glass-panel insight-card">
+                    <div class="panel-head panel-head--compact">
+                      <div>
+                        <p class="eyebrow">Popular zones</p>
+                        <h3>Що бронюють найчастіше</h3>
+                      </div>
+                    </div>
+
+                    <div class="zone-list">
+                      <div class="zone-list__item">
+                        <span>Skyline Lounge</span>
+                        <strong>34%</strong>
+                      </div>
+                      <div class="zone-list__item">
+                        <span>Main Pulse Floor</span>
+                        <strong>29%</strong>
+                      </div>
+                      <div class="zone-list__item">
+                        <span>Private Noir Room</span>
+                        <strong>21%</strong>
+                      </div>
+                      <div class="zone-list__item">
+                        <span>Bar Counter Seats</span>
+                        <strong>16%</strong>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="glass-panel insight-card">
+                    <div class="panel-head panel-head--compact">
+                      <div>
+                        <p class="eyebrow">Quick read</p>
+                        <h3>Коротка аналітика</h3>
+                      </div>
+                    </div>
+
+                    <div class="mini-metrics">
+                      <div>
+                        <span>Середнє за тиждень</span>
+                        <strong>164 гостей</strong>
+                      </div>
+                      <div>
+                        <span>Найкраще вікно для pre-party</span>
+                        <strong>21:00 - 22:15</strong>
+                      </div>
+                      <div>
+                        <span>Формат вечора</span>
+                        <strong>House x cocktails x rooftop</strong>
+                      </div>
+                    </div>
+                  </article>
+                </aside>
+              </div>
+            </article>
+
+            <article class="tab-panel" id="panel-events" role="tabpanel" data-tab-panel="events">
+              <div class="events-grid">
+                <article class="event-card">
+                  <img src="assets/poster-neon.svg" alt="Постер вечірки Velvet Pulse">
+                  <div class="event-card__content">
+                    <div class="event-card__meta">
+                      <span>25 квітня</span>
+                      <span>21:00</span>
+                    </div>
+                    <h3>Velvet Pulse</h3>
+                    <p>
+                      Сет із м'якого nu-disco переходить у deep house peak set,
+                      а rooftop бар запускає smoke-citrus cocktail pairing.
+                    </p>
+                    <div class="tag-row">
+                      <span>Deep house</span>
+                      <span>Neon stage</span>
+                      <span>VIP tables</span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="event-card">
+                  <img src="assets/poster-gold.svg" alt="Постер вечора Skyline Gold">
+                  <div class="event-card__content">
+                    <div class="event-card__meta">
+                      <span>27 квітня</span>
+                      <span>19:30</span>
+                    </div>
+                    <h3>Skyline Gold</h3>
+                    <p>
+                      Sunset-формат для тих, хто любить стильну розмову, light jazz house
+                      і м'яке золоте світло на верхній терасі.
+                    </p>
+                    <div class="tag-row">
+                      <span>Sunset lounge</span>
+                      <span>Cocktail ritual</span>
+                      <span>Dress code glow</span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="event-card">
+                  <img src="assets/poster-wave.svg" alt="Постер ночі Bassline Tide">
+                  <div class="event-card__content">
+                    <div class="event-card__meta">
+                      <span>02 травня</span>
+                      <span>22:30</span>
+                    </div>
+                    <h3>Bassline Tide</h3>
+                    <p>
+                      Ніч для тих, хто приходить за саундом: довгі переходи, морська хвиля
+                      басу, лазерна геометрія та наративна сценографія.
+                    </p>
+                    <div class="tag-row">
+                      <span>Hybrid DJ set</span>
+                      <span>Visual waves</span>
+                      <span>Late night room</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </article>
+
+            <article class="tab-panel" id="panel-gallery" role="tabpanel" data-tab-panel="gallery">
+              <div class="gallery-grid">
+                <button
+                  class="gallery-card"
+                  type="button"
+                  data-image="assets/poster-neon.svg"
+                  data-title="Velvet Pulse"
+                  data-copy="Неоновий постер для головної сцени з м'яким переходом від lounge до peak-time енергії."
+                >
+                  <img src="assets/poster-neon.svg" alt="Постер Velvet Pulse">
+                  <span class="gallery-card__meta">
+                    <strong>Velvet Pulse</strong>
+                    <small>Натисни, щоб збільшити</small>
+                  </span>
+                </button>
+
+                <button
+                  class="gallery-card"
+                  type="button"
+                  data-image="assets/poster-gold.svg"
+                  data-title="Skyline Gold"
+                  data-copy="Теплий rooftop візуал для золотих заходів сонця, коктейльних зустрічей і lounge nights."
+                >
+                  <img src="assets/poster-gold.svg" alt="Постер Skyline Gold">
+                  <span class="gallery-card__meta">
+                    <strong>Skyline Gold</strong>
+                    <small>Open artwork</small>
+                  </span>
+                </button>
+
+                <button
+                  class="gallery-card"
+                  type="button"
+                  data-image="assets/poster-wave.svg"
+                  data-title="Bassline Tide"
+                  data-copy="Графічна хвиля для музичних вечорів із глибоким саунд-дизайном та акцентом на бас."
+                >
+                  <img src="assets/poster-wave.svg" alt="Постер Bassline Tide">
+                  <span class="gallery-card__meta">
+                    <strong>Bassline Tide</strong>
+                    <small>Open artwork</small>
+                  </span>
+                </button>
+
+                <button
+                  class="gallery-card"
+                  type="button"
+                  data-image="assets/poster-ember.svg"
+                  data-title="Afterglow Room"
+                  data-copy="Постер для after-hours кімнати з теплими прожекторами, м'якими тінями та червоно-золотим світлом."
+                >
+                  <img src="assets/poster-ember.svg" alt="Постер Afterglow Room">
+                  <span class="gallery-card__meta">
+                    <strong>Afterglow Room</strong>
+                    <small>Open artwork</small>
+                  </span>
+                </button>
+
+                <article class="gallery-note">
+                  <p class="eyebrow">Art direction</p>
+                  <h3>Власні картинки всередині макета</h3>
+                  <p>
+                    Замість сухого шаблону тут є своя візуальна серія: hero-art, афішні постери,
+                    лайтбокс-галерея і багатошаровий клубний фон.
+                  </p>
+                </article>
+              </div>
+            </article>
+
+            <article class="tab-panel" id="panel-membership" role="tabpanel" data-tab-panel="membership">
+              <div class="membership-grid">
+                <article class="plan-card">
+                  <span class="pill">Starter</span>
+                  <h3>Signature Entry</h3>
+                  <p class="plan-card__price">2 900 грн</p>
+                  <p>Для гостей, які хочуть свій стабільний ритм без перевантаження формальностями.</p>
+                  <div class="plan-card__features">
+                    <span>Priority check-in</span>
+                    <span>Welcome cocktail</span>
+                    <span>2 guest list passes</span>
+                    <span>Preferred bar seating</span>
+                  </div>
+                </article>
+
+                <article class="plan-card plan-card--featured">
+                  <span class="pill pill--accent">Most wanted</span>
+                  <h3>Backstage Circle</h3>
+                  <p class="plan-card__price">6 400 грн</p>
+                  <p>Найкращий баланс між приватністю, сервісом, персональним host та сезонними івентами.</p>
+                  <div class="plan-card__features">
+                    <span>Fast-lane entry</span>
+                    <span>Reserved table twice a month</span>
+                    <span>Private host chat</span>
+                    <span>First access to themed nights</span>
+                  </div>
+                </article>
+
+                <article class="plan-card">
+                  <span class="pill">Private</span>
+                  <h3>Noir Room Key</h3>
+                  <p class="plan-card__price">11 800 грн</p>
+                  <p>Формат для закритих зустрічей, святкувань і тих вечорів, де все має бути під тебе.</p>
+                  <div class="plan-card__features">
+                    <span>Private room credits</span>
+                    <span>Custom bottle service</span>
+                    <span>Guest curator support</span>
+                    <span>After-hours access</span>
+                  </div>
+                </article>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience" id="experience">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Experience Design</p>
+          <h2>Кілька фіч, що роблять сайт живим, а клуб впізнаваним.</h2>
+          <p>
+            Нижче зібрано сценарій ночі, атмосферні зони та короткі інсайти, щоб сторінка
+            працювала не тільки як красива вітрина, а як міні-презентація бренду.
+          </p>
+        </div>
+
+        <div class="experience-grid">
+          <article class="timeline-card" data-reveal>
+            <p class="eyebrow">Night Flow</p>
+            <h3>Сценарій вечора</h3>
+
+            <div class="timeline-step">
+              <span>19:30</span>
+              <div>
+                <strong>Golden Hour Check-in</strong>
+                <p>М'яке світло, lounge-сет і знайомство з барною картою.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <span>21:15</span>
+              <div>
+                <strong>Main Pulse Opens</strong>
+                <p>Темп стає густішим, crowd переходить у центральну залу.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <span>23:40</span>
+              <div>
+                <strong>Peak Moment</strong>
+                <p>Найпотужніша хвиля світла, сету і бронювань у VIP-зонах.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <span>02:10</span>
+              <div>
+                <strong>Afterglow Session</strong>
+                <p>Тихіший, глибший формат для своїх і для справжніх late-night lovers.</p>
+              </div>
+            </div>
+          </article>
+
+          <div class="feature-stack">
+            <article class="feature-card" data-reveal>
+              <p class="eyebrow">Sound system</p>
+              <h3>Імерсивний звук без втоми</h3>
+              <p>
+                Сайт підкреслює клуб як curated-space: тут не просто гучно, а збалансовано по зонах,
+                щоб і танцювати, і говорити було комфортно.
+              </p>
+            </article>
+
+            <article class="feature-card" data-reveal>
+              <p class="eyebrow">Cocktail lab</p>
+              <h3>Бар як окрема сцена</h3>
+              <p>
+                Авторські напої, ритуальна подача та pairing під сет вечора роблять бар
+                частиною шоу, а не допоміжним сервісом.
+              </p>
+            </article>
+
+            <article class="feature-card" data-reveal>
+              <p class="eyebrow">Private hosting</p>
+              <h3>Бронювання з характером</h3>
+              <p>
+                Є membership-рівні, date-night атмосфера, групові сценарії та невеликий
+                інтерактивний блок бронювання нижче на сторінці.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="voices">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Guest Notes</p>
+          <h2>Що відчуває аудиторія всередині N&M Club.</h2>
+        </div>
+
+        <div class="quotes-grid">
+          <blockquote class="quote-card" data-reveal>
+            <p>
+              "Тут реально відчувається арт-дирекція простору. Ніби приходиш не просто в клуб,
+              а на добре поставлену ніч."
+            </p>
+            <footer>Ірина, creative producer</footer>
+          </blockquote>
+
+          <blockquote class="quote-card" data-reveal>
+            <p>
+              "Люблю, що можна спершу спокійно сидіти на rooftop, а потім перейти в main room,
+              коли сет виходить на максимум."
+            </p>
+            <footer>Максим, resident guest</footer>
+          </blockquote>
+
+          <blockquote class="quote-card" data-reveal>
+            <p>
+              "Сайт добре передає вайб місця: дорого, сучасно і без відчуття пластикового шаблону."
+            </p>
+            <footer>Софія, art buyer</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="reserve" id="reserve">
+        <div class="reserve__copy" data-reveal>
+          <p class="eyebrow">Booking Studio</p>
+          <h2>Сконструюй свою ідеальну ніч.</h2>
+          <p>
+            Ще одна фіча сторінки: інтерактивний mood slider. Пересувай його і дивись,
+            який формат вечора сайт радить саме тобі.
+          </p>
+
+          <div class="mood-meter">
+            <label for="moodRange">Інтенсивність вечора</label>
+            <input id="moodRange" type="range" min="1" max="5" value="3">
+            <div class="mood-meter__labels">
+              <span>Warm lounge</span>
+              <strong id="moodLabel">Balanced pulse</strong>
+              <span>Peak dancefloor</span>
+            </div>
+          </div>
+
+          <div class="reserve__insight">
+            <div>
+              <span>Рекомендований формат</span>
+              <strong id="packageHint">Signature table + citrus welcome set</strong>
+            </div>
+            <div>
+              <span>Ідеальна зона</span>
+              <strong id="zoneHint">Skyline Lounge</strong>
+            </div>
+          </div>
+        </div>
+
+        <form class="reserve-form glass-panel" data-reveal>
+          <div class="panel-head panel-head--compact">
+            <div>
+              <p class="eyebrow">Reservation</p>
+              <h3>Швидке бронювання</h3>
+            </div>
+            <span class="pill">Demo form</span>
+          </div>
+
+          <label>
+            Ім'я
+            <input type="text" placeholder="Наприклад, Анна">
+          </label>
+
+          <label>
+            Кількість гостей
+            <input type="number" placeholder="4">
+          </label>
+
+          <label>
+            Дата
+            <input type="date">
+          </label>
+
+          <label>
+            Побажання
+            <textarea rows="4" placeholder="DJ vibe, улюблена зона, привід для вечора"></textarea>
+          </label>
+
+          <button class="button" type="button">Надіслати запит</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>N&M Club</strong>
+        <p>Curated nights, rooftop glow, deep sound and private energy.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hub">Hub</a>
+        <a href="#experience">Experience</a>
+        <a href="#reserve">Reserve</a>
+      </div>
+    </footer>
+  </div>
+
+  <div class="lightbox" hidden>
+    <div class="lightbox__backdrop" data-close-lightbox></div>
+    <div class="lightbox__dialog" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+      <button class="lightbox__close" type="button" aria-label="Закрити галерею" data-close-lightbox>
+        ×
+      </button>
+      <img id="lightboxImage" src="" alt="">
+      <div class="lightbox__content">
+        <p class="eyebrow">Gallery Focus</p>
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxCopy"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

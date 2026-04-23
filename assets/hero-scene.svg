@@ -1,0 +1,100 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="181" y1="98" x2="1011" y2="801" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E1B20"/>
+      <stop offset="0.52" stop-color="#122830"/>
+      <stop offset="1" stop-color="#091217"/>
+    </linearGradient>
+    <radialGradient id="amberGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(346 170) rotate(90) scale(218)">
+      <stop stop-color="#F3C97A" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#F3C97A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mintGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(955 225) rotate(90) scale(180)">
+      <stop stop-color="#8AF5C8" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#8AF5C8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="coralGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(872 654) rotate(90) scale(255)">
+      <stop stop-color="#FF6C4F" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FF6C4F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stage" x1="337" y1="677" x2="865" y2="677" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF6C4F"/>
+      <stop offset="0.52" stop-color="#F3C97A"/>
+      <stop offset="1" stop-color="#8AF5C8"/>
+    </linearGradient>
+    <linearGradient id="beamOne" x1="391" y1="80" x2="533" y2="584" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7B5B" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FF7B5B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beamTwo" x1="822" y1="96" x2="710" y2="592" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8AF5C8" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#8AF5C8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blurBig" x="-72" y="-72" width="1344" height="1044" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="36"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" rx="54" fill="url(#bg)"/>
+  <g filter="url(#blurBig)">
+    <circle cx="345" cy="170" r="218" fill="url(#amberGlow)"/>
+    <circle cx="955" cy="225" r="180" fill="url(#mintGlow)"/>
+    <circle cx="872" cy="654" r="255" fill="url(#coralGlow)"/>
+  </g>
+
+  <rect x="74" y="84" width="1052" height="732" rx="40" stroke="#2A3D44" stroke-width="2"/>
+
+  <path d="M344 93L514 594H414L248 93H344Z" fill="url(#beamOne)"/>
+  <path d="M857 93L688 594H792L954 93H857Z" fill="url(#beamTwo)"/>
+
+  <ellipse cx="600" cy="753" rx="352" ry="88" fill="#0B161A"/>
+  <ellipse cx="600" cy="743" rx="352" ry="88" fill="url(#stage)" fill-opacity="0.15"/>
+  <path d="M337 672C430 629 513 607 600 607C687 607 770 629 863 672V721H337V672Z" fill="url(#stage)" fill-opacity="0.2"/>
+  <path d="M392 632C458 611 520 600 600 600C680 600 742 611 808 632" stroke="url(#stage)" stroke-width="6" stroke-linecap="round"/>
+
+  <g opacity="0.95">
+    <path d="M420 590C420 462 503 351 600 351C697 351 780 462 780 590" stroke="#F7EFDF" stroke-opacity="0.1" stroke-width="12" stroke-linecap="round"/>
+    <path d="M468 590C468 487 527 407 600 407C673 407 732 487 732 590" stroke="#F7EFDF" stroke-opacity="0.16" stroke-width="10" stroke-linecap="round"/>
+    <path d="M515 590C515 512 557 457 600 457C643 457 685 512 685 590" stroke="#F7EFDF" stroke-opacity="0.22" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <path d="M600 162L600 277" stroke="#F7EFDF" stroke-opacity="0.6" stroke-width="2"/>
+    <circle cx="600" cy="129" r="31" fill="#F4E5B7"/>
+    <circle cx="600" cy="129" r="31" fill="url(#stage)" fill-opacity="0.18"/>
+    <path d="M571 129H629" stroke="#091217" stroke-opacity="0.24" stroke-width="2"/>
+    <path d="M600 98V160" stroke="#091217" stroke-opacity="0.24" stroke-width="2"/>
+    <path d="M583 105C592 111 608 111 617 105" stroke="#091217" stroke-opacity="0.24" stroke-width="2"/>
+    <path d="M583 153C592 147 608 147 617 153" stroke="#091217" stroke-opacity="0.24" stroke-width="2"/>
+    <path d="M576 116C587 126 587 132 576 142" stroke="#091217" stroke-opacity="0.24" stroke-width="2"/>
+    <path d="M624 116C613 126 613 132 624 142" stroke="#091217" stroke-opacity="0.24" stroke-width="2"/>
+  </g>
+
+  <g opacity="0.78">
+    <circle cx="313" cy="632" r="7" fill="#8AF5C8"/>
+    <circle cx="887" cy="618" r="7" fill="#FF6C4F"/>
+    <circle cx="954" cy="564" r="5" fill="#F3C97A"/>
+    <circle cx="258" cy="550" r="5" fill="#F3C97A"/>
+  </g>
+
+  <g fill="#0A1518">
+    <path d="M458 657C457 620 470 590 486 583C511 573 536 621 545 657H458Z"/>
+    <circle cx="497" cy="554" r="20"/>
+    <path d="M532 669C531 615 553 579 575 579C601 579 622 615 625 669H532Z"/>
+    <circle cx="577" cy="550" r="22"/>
+    <path d="M615 671C615 627 635 590 659 590C684 590 703 627 702 671H615Z"/>
+    <circle cx="659" cy="561" r="20"/>
+    <path d="M706 662C706 627 719 600 735 595C759 586 780 629 785 662H706Z"/>
+    <circle cx="739" cy="569" r="18"/>
+    <path d="M355 685C355 641 373 611 393 611C416 611 436 641 440 685H355Z"/>
+    <circle cx="394" cy="585" r="18"/>
+    <path d="M790 685C790 645 808 613 829 613C851 613 870 645 873 685H790Z"/>
+    <circle cx="829" cy="588" r="18"/>
+  </g>
+
+  <path d="M88 767C238 724 394 701 600 701C806 701 962 724 1112 767" stroke="#F7EFDF" stroke-opacity="0.08" stroke-width="3" stroke-linecap="round"/>
+  <path d="M182 818C318 790 441 776 600 776C759 776 882 790 1018 818" stroke="#F7EFDF" stroke-opacity="0.08" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="110" y="150" fill="#F7EFDF" fill-opacity="0.86" font-family="Arial, sans-serif" font-size="34" font-weight="700">N&amp;M Club</text>
+  <text x="110" y="188" fill="#B9C5C4" font-family="Arial, sans-serif" font-size="18" letter-spacing="6">CURATED NIGHT EXPERIENCE</text>
+</svg>

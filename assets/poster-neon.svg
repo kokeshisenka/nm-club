@@ -1,0 +1,53 @@
+<svg width="780" height="1040" viewBox="0 0 780 1040" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="neonBg" x1="86" y1="88" x2="714" y2="968" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#112028"/>
+      <stop offset="0.45" stop-color="#18323A"/>
+      <stop offset="1" stop-color="#091117"/>
+    </linearGradient>
+    <radialGradient id="neonGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(546 286) rotate(90) scale(254)">
+      <stop stop-color="#FF6C4F" stop-opacity="0.66"/>
+      <stop offset="1" stop-color="#FF6C4F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mintGlowPoster" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(224 760) rotate(90) scale(250)">
+      <stop stop-color="#8AF5C8" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#8AF5C8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="archStroke" x1="209" y1="258" x2="573" y2="744" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB08E"/>
+      <stop offset="1" stop-color="#8AF5C8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="780" height="1040" rx="42" fill="url(#neonBg)"/>
+  <circle cx="546" cy="286" r="254" fill="url(#neonGlow)"/>
+  <circle cx="224" cy="760" r="250" fill="url(#mintGlowPoster)"/>
+  <rect x="46" y="46" width="688" height="948" rx="28" stroke="#2C4045" stroke-width="2"/>
+
+  <path d="M390 183V406" stroke="#F6E8D5" stroke-opacity="0.55" stroke-width="2"/>
+  <circle cx="390" cy="150" r="28" fill="#F6E8D5"/>
+  <circle cx="390" cy="150" r="28" fill="#FF6C4F" fill-opacity="0.18"/>
+  <path d="M364 150H416" stroke="#0A1419" stroke-opacity="0.28" stroke-width="2"/>
+  <path d="M390 124V176" stroke="#0A1419" stroke-opacity="0.28" stroke-width="2"/>
+
+  <path d="M210 742C210 583 289 450 390 450C491 450 570 583 570 742" stroke="url(#archStroke)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M262 742C262 619 319 523 390 523C461 523 518 619 518 742" stroke="#F6E8D5" stroke-opacity="0.26" stroke-width="8" stroke-linecap="round"/>
+  <path d="M314 742C314 658 350 595 390 595C430 595 466 658 466 742" stroke="#F6E8D5" stroke-opacity="0.22" stroke-width="6" stroke-linecap="round"/>
+
+  <path d="M120 250C234 214 318 196 390 196C462 196 546 214 660 250" stroke="#F6E8D5" stroke-opacity="0.12" stroke-width="2" stroke-linecap="round"/>
+  <path d="M120 812C234 778 318 760 390 760C462 760 546 778 660 812" stroke="#F6E8D5" stroke-opacity="0.12" stroke-width="2" stroke-linecap="round"/>
+
+  <g fill="#0B1418">
+    <path d="M261 778C261 723 287 682 314 682C343 682 367 723 370 778H261Z"/>
+    <circle cx="314" cy="652" r="24"/>
+    <path d="M354 790C354 717 386 665 422 665C458 665 489 717 492 790H354Z"/>
+    <circle cx="422" cy="632" r="28"/>
+    <path d="M460 778C460 723 485 682 513 682C541 682 565 723 568 778H460Z"/>
+    <circle cx="513" cy="652" r="24"/>
+  </g>
+
+  <text x="86" y="120" fill="#F6E8D5" font-family="Arial, sans-serif" font-size="18" letter-spacing="8">N&amp;M CLUB</text>
+  <text x="86" y="880" fill="#F6E8D5" font-family="Arial, sans-serif" font-size="74" font-weight="700">VELVET</text>
+  <text x="86" y="952" fill="#F6E8D5" font-family="Arial, sans-serif" font-size="74" font-weight="700">PULSE</text>
+  <text x="86" y="998" fill="#B7C3C2" font-family="Arial, sans-serif" font-size="18" letter-spacing="5">NU-DISCO / HOUSE / NIGHT EXPERIENCE</text>
+</svg>
